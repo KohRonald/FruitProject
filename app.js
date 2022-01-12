@@ -38,11 +38,11 @@ async function run() {
             }
         ];
 
-        // //insert the new document(Row(SQL)) into the collection(Table(SQL)), and stores it into a constant called fruits
-        // const fruits = await collection.insertMany(newFruits);
+        //insert the new document(Row(SQL)) into the collection(Table(SQL)), and stores it into a constant called fruits
+        const fruits = await collection.insertMany(newFruits);
 
-        // //logs the document to the console (Non-Javascript Object)
-        // console.log(fruits);
+        //logs the document to the console (Non-Javascript Object)
+        console.log(fruits);
 
         //search through all objects in the fruits collection and store them in an array
         const cursor = collection.find({});
